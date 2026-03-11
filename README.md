@@ -1,1 +1,1 @@
-# Public Archives of Games
+# Public Archives of Games (PAoG)
