@@ -592,7 +592,7 @@ body.vip-active .modal-button.proceed { color: var(--bg-color); }
         <div class="modal-content vip-modal">
             <button class="modal-close-btn" onclick="document.getElementById('vip-login-modal').style.display='none'">&times;</button>
             <h2><i class="fas fa-star"></i> VIP Login</h2>
-            <p> Just click login </p>
+            <p> Put spaces in the boxes (only 1) </p>
             <form id="vip-login-form">
                 <input type="text" id="vip-username" placeholder="VIP Username" required>
                 <input type="password" id="vip-password" placeholder="VIP Password" required>
@@ -630,7 +630,7 @@ body.vip-active .modal-button.proceed { color: var(--bg-color); }
     <script>
 const API_KEY = '3a73619bbb8fc6d47742d1b5b2b707b5';
 const baseURL = 'https://api.themoviedb.org/3';
-const vipUsers = [{ user: "codyAdmin", pass: "Kt4jUvMt" }, { user: "", pass: "" }];
+const vipUsers = [{ user: "codyAdmin", pass: "Kt4jUvMt" }, { user: " ", pass: " " }];
 const announcements = ["Cine-Hub v3.0: Now powered by a massive dynamic library!"];
 const globalCache = {};
 
