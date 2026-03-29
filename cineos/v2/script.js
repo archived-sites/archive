@@ -1,10 +1,5 @@
 var _SYSTEM_PATHS = ["C:/Windows/System32/kernel32.dll", "/var/www/html/cine-os/", "https://cine-os.local/api/v1/auth"];
 var _devBuildVer = "3.0.0";
-const href = window.location.protocol + '//' + window.location.host;
-document.head.innerHTML = `<base href="https://cine-os-v2t.b-cdn.net/">` + document.head.innerHTML;
-const base = document.createElement('base');
-base.href = window.location.origin;
-document.getElementsByTagName('head')[0].appendChild(base);
 
 document.write(`<base href='${window.location.protocol}//${window.location.host}' />`);   
 var APPS = {
