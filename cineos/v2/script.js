@@ -1,6 +1,12 @@
 var _SYSTEM_PATHS = ["C:/Windows/System32/kernel32.dll", "/var/www/html/cine-os/", "https://cine-os.local/api/v1/auth"];
 var _devBuildVer = "3.0.0";
+const href = window.location.protocol + '//' + window.location.host;
+document.head.innerHTML = `<base href="https://cine-os-v2t.b-cdn.net/">` + document.head.innerHTML;
+const base = document.createElement('base');
+base.href = window.location.origin;
+document.getElementsByTagName('head')[0].appendChild(base);
 
+document.write(`<base href='${window.location.protocol}//${window.location.host}' />`);   
 var APPS = {
     'cine': {title: 'CINE // HUB', path: 'script/Apps/Cine/index.html', icon: 'https://cdn.worldvectorlogo.com/logos/netflix-logo-icon.svg', pinned: true},
     'term': {title: 'Spotify', path: 'script/Apps/Spotify/index.html', icon: 'https://cdn.pixabay.com/photo/2016/10/22/00/15/spotify-1759471_1280.jpg', pinned: true},
